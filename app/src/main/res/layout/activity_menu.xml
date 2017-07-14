@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manvish.sampletest.Activities.MenuActivity">
+
+    <include android:id="@+id/header" layout="@layout/header_layout"></include>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view1"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#f28269be"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_below="@+id/view1"
+        android:text="Menu"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/MainPageCmpyAddrTextView" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view2"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/MainPageCmpyAddrTextView" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/view2"
+        android:numColumns="1"
+        android:background="#f28269be"
+        android:paddingTop="10dp"
+        android:layout_above="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_below="@+id/view2"
+        android:id="@+id/categorias_table">
+
+    <!--ROW-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/network_relative"
+            android:background="#1BA436"
+            android:layout_height="250dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/categoria_image_1"
+                android:src="@drawable/newsnetwork"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:text="Network settings"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_below="@+id/categoria_image_1"
+                android:textAllCaps="true"
+                android:textSize="@dimen/font_medium"
+                android:fontFamily="sans-serif-ligh"
+                android:textColor="#ffffffff"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/server_relative"
+            android:background="#FF3033"
+            android:layout_height="250dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/categoria_image_2"
+                android:src="@drawable/newserver"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:text="Server settings"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:textSize="@dimen/font_medium"
+                android:layout_below="@+id/categoria_image_2"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-ligh"
+                android:textColor="#ffffffff"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/unitconfig_relative"
+                android:background="#E34900"
+                android:layout_height="250dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/categoria_image_4"
+                    android:src="@drawable/newunitconfig"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="Unit Configurations"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:layout_below="@+id/categoria_image_4"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/font_medium"
+                    android:fontFamily="sans-serif-ligh"
+                    android:textColor="#ffffffff"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/unitdetails_relative"
+                android:background="#F9B201"
+                android:layout_height="250dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/categoria_image_3"
+                    android:src="@drawable/newunitdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="Unit Details"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_medium"
+                    android:layout_below="@+id/categoria_image_3"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-ligh"
+                    android:textColor="#ffffffff"/>
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rfirreg_relative"
+                android:background="#C6247F"
+                android:layout_height="250dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/categoria_image_5"
+                    android:src="@drawable/newrfid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="Registration"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:layout_below="@+id/categoria_image_5"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/font_medium"
+                    android:fontFamily="sans-serif-ligh"
+                    android:textColor="#ffffffff"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/firmawareupgrade_relative"
+                android:background="@color/colorPrimary"
+                android:layout_height="250dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/categoria_image_6"
+                    android:src="@drawable/newfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="Firmware upgrade"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_medium"
+                    android:layout_below="@+id/categoria_image_6"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-ligh"
+                    android:textColor="#ffffffff"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="20dp"
+        android:layout_marginTop="55dp"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:background="@drawable/cancel_btn_effects"
+        android:visibility="visible"
+        android:textSize="24sp"
+        android:width="150dp" />
+
+
+</RelativeLayout>

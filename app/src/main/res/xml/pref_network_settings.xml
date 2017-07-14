@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <com.manvish.examattendance.view.FriendlyEditTextPreference
+        android:hint="set server IP"
+        android:key="pref_server_ip"
+        android:summary="%s"
+        android:title="Server IP" />
+
+    <com.manvish.examattendance.view.FriendlyEditTextPreference
+        android:hint="Give name server ip"
+        android:key="pref_name_server_ip"
+        android:summary="%s"
+        android:title="Name server ip" />
+    <com.manvish.examattendance.view.FriendlyEditTextPreference
+        android:hint="Put your ip Address"
+        android:key="pref_ip_address"
+        android:summary="%s"
+        android:title="IP Adress" />
+    <com.manvish.examattendance.view.FriendlyEditTextPreference
+        android:defaultValue="80"
+        android:hint="Put port number"
+        android:key="pref_port"
+        android:summary="%s"
+        android:title="Port" />
+
+    <CheckBoxPreference
+        android:key="pref_ssl_enable"
+        android:summary="enables SSL secury connection"
+        android:title="SSL enable" />
+    <Preference
+        android:key="pref_wifi_enable"
+        android:summary="Wi-Fi"
+        android:title="enable Wi-Fi" />
+    <CheckBoxPreference
+        android:key="pref_gprs_enable"
+        android:summary="Enable GPRS"
+        android:title="enable_gprs" />
+
+    <Preference
+        android:key="pref_cancel"
+        android:title="Cancel" />
+
+</PreferenceScreen>

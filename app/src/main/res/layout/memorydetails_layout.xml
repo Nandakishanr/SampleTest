@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:padding="5dp"
+                android:text="Memory Details"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/freeMemoryHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:padding="5dp"
+                android:text="Free"
+                android:layout_weight=".5"
+                android:textColor="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/usedmemoryHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:padding="5dp"
+                android:text="Used"
+                android:layout_weight=".5"
+                android:textColor="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/totalMemoryHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:padding="5dp"
+                android:text="Total"
+                android:layout_weight=".5"
+                android:textColor="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:padding="5dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="RAM"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/freeRAM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="-"
+                android:layout_weight=".5"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/usedRAM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="-"
+                android:layout_weight=".5"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/totalRAM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="-"
+                android:layout_weight=".5"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="Internal"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/freeInternal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:layout_weight=".5"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/usedInternal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:layout_weight=".5"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/totalInternal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:layout_weight=".5"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="External"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/freeExternal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:textColor="@android:color/black"
+                android:layout_weight=".5"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/usedExternal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:textColor="@android:color/black"
+                android:layout_weight=".5"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/totalExternal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_white"
+                android:textColor="@android:color/black"
+                android:layout_weight=".5"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+
+</LinearLayout>

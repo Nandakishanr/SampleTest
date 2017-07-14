@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >XXXDDFFXXXDDFFXXXDDFF
+    <Preference android:key="pref_unit_id" android:summary="123456" android:title="Unit ID"/>
+    <Preference android:key="fpref_irm_ware_version" android:summary="MI005 1.0.1" android:title="Firmware version"/>
+    <Preference android:key="pref_model_no" android:title="Model no" android:summary="MI005"/>
+    <Preference android:title="Cancel" android:key="pref_cancel" />
+
+</PreferenceScreen>

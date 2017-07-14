@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include android:id="@+id/header" layout="@layout/header_layout"/>
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#ffffffff"-->
+        <!--android:layout_below="@+id/header"-->
+        <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view1"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f28269be"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_below="@+id/view1"
+        android:text="Registration"
+        android:gravity="center"
+        android:drawableLeft="@drawable/backbutton"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/heagerTextView" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view2"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/heagerTextView" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Photo Section"
+        android:id="@+id/PhotoSectionHeadertext"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/blackshadow"
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view7"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_below="@+id/PhotoSectionHeadertext" />
+
+
+    <!--<ImageView
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:id="@+id/regverDwnlddPhotoImageview"
+        android:src="@drawable/defaultimage"
+        android:minWidth="400dp"
+        android:minHeight="400dp"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true" />-->
+    <LinearLayout
+        android:id="@+id/llPicSection"
+        android:layout_width="330dp"
+        android:layout_height="380dp"
+        android:orientation="vertical"
+        android:minWidth="330dp"
+        android:minHeight="380dp"
+        android:layout_below="@+id/view7"
+        android:layout_centerHorizontal="true">
+
+
+        <FrameLayout
+            android:layout_width="330dp"
+            android:layout_height="380dp"
+            android:minWidth="400dp"
+            android:minHeight="380dp"
+            android:id="@+id/cameraCaptureFrame"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:id="@+id/PhotoDisplayImageView"
+                android:layout_width="330dp"
+                android:layout_height="380dp"
+                android:minWidth="400dp"
+                android:minHeight="380dp"
+                android:src="@drawable/no_image_place_holder"
+                />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!--<ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/regverDwnlddPhotoImageAftrCapture"
+        android:layout_below="@+id/view1"
+        android:layout_alignRight="@+id/regverCptPhtFngrButton"
+        android:layout_alignEnd="@+id/regverCptPhtFngrButton"
+        android:src="@drawable/studentdefaultimage" />
+-->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view4"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_below="@+id/llPicSection" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Student Details"
+        android:id="@+id/StudentDetailsHeadertext"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="@color/blackshadow"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/view4"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view9"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_below="@+id/StudentDetailsHeadertext" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view9"
+        android:weightSum="4"
+        android:orientation="vertical">
+
+        <include android:id="@+id/idDetails"
+            layout="@layout/iddetails_layout"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_width="match_parent" />
+
+        <!--<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Student-id"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#587bf3"
+            android:id="@+id/regverStudentIDTextView"
+            android:layout_below="@id/view2"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nanda Kishan R"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#587bf3"
+            android:id="@+id/regverStudentNameTextView"
+            android:layout_below="@id/regverStudentIDTextView"/>-->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/displayInfoTextview"
+            android:text="Place Right Index Finger\n For Registration"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_light"/>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:id="@+id/view3"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_blue_bright"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CancelRfidButton"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="60dp"
+                android:textStyle="bold"
+                android:background="@drawable/round_corner_button"
+                android:text="Cancel"
+                android:textSize="30dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/regverCptRfidButton"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/custom_camerabutton"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/rfidsensor"
+                android:text="Scan RFID"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SaveRfidButton"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/round_corner_button"
+                android:textStyle="bold"
+                android:text="Save"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_cancelbutton"
+        android:layout_below="@+id/view3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone"
+        android:id="@+id/regverfingerBackButton" />-->
+
+
+
+
+</RelativeLayout>

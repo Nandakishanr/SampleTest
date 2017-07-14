@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242329">
+
+    <TextView
+        android:id="@+id/wantToContinueDialogTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DO YOU WANT TO CONTINUE?"
+        android:padding="20dp"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40dp" >
+    </TextView>
+
+    <TextView
+    android:id="@+id/note_tv"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="10dp"
+    android:text="Note:To perform above operation first you have to verify existing superuser"
+    android:padding="20dp"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:textSize="20dp"
+    android:visibility="gone"
+    android:layout_below="@+id/wantToContinueDialogTextView">
+</TextView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note_tv"
+        android:paddingBottom="30dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#7BC1FF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Cancel"
+            android:id="@+id/wantToContinueDialogCancelButton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:background="#7BC1FF"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:text="Enter"
+            android:id="@+id/wantToContinueDialogEnterButton" />
+    </LinearLayout>
+
+</RelativeLayout>

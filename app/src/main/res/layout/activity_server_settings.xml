@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5fb0c9"
+
+    tools:context="com.example.manvish.aadhartimeattendance.Activities.MenuActivity">
+
+    <include android:id="@+id/header" layout="@layout/header_layout"></include>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view1"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:background="#f28269be"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_below="@+id/view1"
+        android:text="Server Settings"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/MainPageCmpyAddrTextView" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view2"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/MainPageCmpyAddrTextView" />
+
+
+    <RelativeLayout
+        android:id="@+id/loginrelative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#fff"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/ipet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ip"
+                    android:hint="Enter IP Ex: 192.168.1.53"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/portet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/port"
+                    android:hint="Enter Port Ex: 8081"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SSL:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:button="@null"
+                    android:id="@+id/cbserversettings"
+                     android:background="?android:attr/listChoiceIndicatorMultiple"
+
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:background="@drawable/menu_button_selector"
+                android:text="Set"
+                android:textAllCaps="false"
+                android:id="@+id/setipport"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_cancelbutton"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:id="@+id/cancelbtn_serversettings"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboardview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/loginrelative"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone" />
+
+
+
+
+
+    </RelativeLayout>

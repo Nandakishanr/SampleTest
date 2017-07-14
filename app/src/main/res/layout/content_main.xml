@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main"
+    tools:context=".Activities.MainActivity">
+
+<include android:id="@+id/header" layout="@layout/header_layout"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view3"
+        android:paddingTop="10dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="Manvish eTech Pvt Ltd"
+        android:background="#f28269be"
+        android:layout_below="@+id/view3"
+        android:id="@+id/MainPageCmpyNameTextView" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view1"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/MainPageCmpyNameTextView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#f28269be"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_below="@+id/view1"
+        android:text="Jayanagar 3rd Block,Bangalore"
+        android:id="@+id/MainPageCmpyAddrTextView" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view2"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/MainPageCmpyAddrTextView" />
+
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/MainPageLogoImageView"
+        android:src="@drawable/manvishlogo"
+        android:maxHeight="250dp"
+        android:maxWidth="250dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/MainPageCmpyAddrTextView"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bangalore"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_light"
+        android:id="@+id/MainPageLocationTextView"
+        android:layout_below="@+id/MainPageLogoImageView"
+        android:layout_centerHorizontal="true" />
+
+    <include android:id="@+id/keyboardview_and_etfields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/main_page_keypad"
+        android:layout_below="@+id/MainPageLocationTextView"/>
+
+
+</RelativeLayout>

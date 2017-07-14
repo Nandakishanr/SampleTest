@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manvish.aadhartimeattendance.Activities.MenuActivity">
+
+    <include android:id="@+id/header" layout="@layout/header_layout"></include>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view1"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:background="#f28269be"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_below="@+id/view1"
+        android:text="Network Settings"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/MainPageCmpyAddrTextView" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view2"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/MainPageCmpyAddrTextView" />
+
+    <LinearLayout
+        android:id="@+id/llofboth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MainPageCmpyAddrTextView"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/llayout"
+            android:weightSum="3"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_edit_textbox"
+            android:layout_below="@+id/settingheader">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="WiFi"
+                android:id="@+id/wifiTextview"
+                android:textSize="30dp"
+                android:lines="3"
+                android:maxLines="3"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:drawableLeft="@drawable/wifiicon"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+
+
+                <!--<Button-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="ON"-->
+                    <!--android:lines="2"-->
+                    <!--android:layout_margin="2dp"-->
+                    <!--android:id="@+id/wifiONSwitchButton"-->
+                    <!--android:layout_gravity="center_horizontal" />-->
+
+                <!--<Button-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="OFF"-->
+                    <!--android:lines="2"-->
+                    <!--android:layout_margin="2dp"-->
+                    <!--android:id="@+id/wifiOFFSwitchButton"-->
+                    <!--android:layout_gravity="center_horizontal" />
+                    -->
+                <Switch
+                    android:id="@+id/wifiSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="ON"
+                    android:thumb="@drawable/customswitchselector"
+                    android:track="@drawable/custom_track"
+                    android:textOff="OFF"
+                    android:layout_weight="0.3"
+                    android:layout_centerHorizontal="true"
+                    />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/llayout2"
+            android:weightSum="3"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_edit_textbox"
+            android:layout_below="@+id/settingheader">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="Data"
+                android:id="@+id/dataTextview"
+                android:textSize="30dp"
+                android:lines="3"
+                android:maxLines="3"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:drawableLeft="@drawable/gprs"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <Switch
+                android:id="@+id/gprsswitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="ON"
+                android:thumb="@drawable/customswitchselector"
+                android:track="@drawable/custom_track"
+                android:textOff="OFF"
+                android:layout_weight=".3"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:id="@+id/setApnbtn"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/llofboth"
+        android:background="@drawable/round_corner_button"
+        android:text="Set APN"
+        android:layout_margin="20dp"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:id="@+id/datepicker"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/setApnbtn"
+        android:background="@drawable/round_corner_button"
+        android:text="Set Date"
+        android:layout_margin="20dp"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:id="@+id/timepicker"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/datepicker"
+        android:background="@drawable/round_corner_button"
+        android:text="Set Time"
+        android:layout_margin="20dp"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+
+
+    <Button
+        android:id="@+id/networksettingssBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:background="@drawable/cancel_btn_effects"
+        android:visibility="visible"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:width="150dp" />
+
+    </RelativeLayout>

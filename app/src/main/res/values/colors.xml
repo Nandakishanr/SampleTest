@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="indigo">#4B0082</color>
+    <color name="pink">#800080	</color>
+    <color name="primaryPressed">#106BA7</color>
+    <color name="primaryFocused">#2399E7</color>
+    <color name="primary">#50A2D2</color>
+    <color name="cancelprimaryPressed">#BD1421</color>
+    <color name="cancelprimaryFocused">#AF101C</color>
+    <color name="cancelprimary">#F66570</color>
+
+    <color name="tabbackgroundcolor">#8fa6f7</color>
+    <item name="red" type="color">#FF0000</item>
+    <item name="green" type="color">#006400</item>
+    <item name="blue" type="color">#6c98ff</item>
+    <item name="dark_grey" type="color">#A9A9A9</item>
+    <color name="blackshadow">#99000000</color>
+</resources>

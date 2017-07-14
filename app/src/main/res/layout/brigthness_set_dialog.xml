@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="10dp"
+        android:maxHeight="10dp"
+        android:id="@+id/brightnessSeekBar"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_below="@+id/textView"
+        android:thumb="@drawable/seekbar_thumb"
+        android:max="255"
+        android:paddingBottom="50dp"
+        android:progressDrawable="@layout/custom_seekbar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/decs_imageView"
+        android:layout_alignTop="@+id/brightnessSeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/dec_brightness"
+        android:paddingLeft="50dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/incs_imageView"
+        android:src="@drawable/inc_brightness"
+        android:paddingRight="50dp"
+        android:layout_alignTop="@+id/brightnessSeekBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/borderlessButtonStyle"
+        android:text="Set Brightness"
+        android:id="@+id/textView"
+        android:gravity="left|center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

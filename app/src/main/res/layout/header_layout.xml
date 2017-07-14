@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40sp"
+    android:orientation="horizontal"
+    android:background="#f28269be">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/headersd_card_Imageview"
+        android:layout_centerVertical="true"
+        android:src="@drawable/memorypresent" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12/10/1992"
+            android:textColor="@android:color/white"
+            android:id="@+id/headerDateTextView"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="15dp" />
+
+        <DigitalClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/headerDigitalClock"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/gps_ImageView"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"
+        android:src="@drawable/locationon"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/headerwifi_Icon"
+            android:layout_gravity="center"
+            android:src="@drawable/wififound"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:maxWidth="100dp"
+            android:layout_height="wrap_content"
+            android:text="Manvish_wifi"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/headerwifiSSIDTextView"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/dwnld_upld_ImageView"
+        android:layout_gravity="center"
+        android:src="@drawable/infoicon"
+        android:layout_marginLeft="25dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp">
+
+        <ImageView
+            android:id="@+id/batteryHead"
+            android:layout_width="4dp"
+            android:layout_height="10dp"
+            android:background="#d0d4d7"
+            android:layout_gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="37dp"
+            android:layout_height="20dp"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/progressbar_states"/>
+
+        <ImageView
+            android:id="@+id/imagePlug"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/plugnew"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="85%"
+        android:layout_marginLeft="3dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/headerPercentageText" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/signalLevel"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_sim"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+
+
+</LinearLayout>

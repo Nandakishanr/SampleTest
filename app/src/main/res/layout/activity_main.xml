@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getfolderlistbutton"
+        android:text="Click to get folderList"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corner_button"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getfilelistbutton"
+        android:text="Click to get fileList"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/getfolderlistbutton"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corner_button"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mainpageIDEnterEditText"
+        android:text="Folder Name is EMP1"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:id="@+id/foldernameTV"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:singleLine="false"
+        />
+
+
+    <EditText
+        android:id="@+id/mainpageIDEnterEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:background="@drawable/custom_edit_textbox"
+        android:maxLength="25"
+        android:focusable="true"
+        android:layout_above="@+id/caputefingurebtn"
+        android:hint="Enter file name to save "
+        android:inputType="number"
+        android:textSize="16dp"
+        android:longClickable="false"
+        android:padding="12dp"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:id="@+id/caputefingurebtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Capture Fingure"
+        android:background="@drawable/menu_button_selector"
+        />
+
+
+
+
+</RelativeLayout>

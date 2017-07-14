@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/empIdtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Emp ID"
+        android:textColor="@color/primaryPressed"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/empNametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Emp Name"
+        android:textColor="@color/primaryPressed"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/empAadhartv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Aadhar Number"
+        android:textColor="@color/primaryPressed"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/emp_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/defaultimage"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/empDepartmenttv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Department"
+        android:textColor="@color/primaryPressed"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/empCatogarytv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Catogary"
+        android:textColor="@color/primaryPressed"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelbtn_empDisplay"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/cancel_btn_effects"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/capture_empdetails"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/round_corner_button"
+            android:text="Capture Fingure" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/msoconfiguration"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/msoconfiguration">
+    </item>
+    <item
+        android:id="@+id/sdkLoggingParameters"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/sdkLoggingParameters">
+    </item>
+
+</menu>

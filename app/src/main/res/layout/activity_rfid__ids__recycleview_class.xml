@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manvish.sampletest.Activities.MenuActivity">
+
+    <include android:id="@+id/header" layout="@layout/header_layout"></include>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view1"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:background="#f28269be"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_below="@+id/view1"
+        android:text="Registration ID List"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/MainPageCmpyAddrTextView" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/view2"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/MainPageCmpyAddrTextView" />
+
+
+        <include android:id="@+id/present_absent_stats"
+            layout="@layout/present_absent_stats"
+            android:layout_below="@+id/view2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/llStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/present_absent_stats"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginRight="10dp"
+            android:focusable="true"
+            android:layout_marginLeft="10dp"
+            android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/DynamicButtonEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1.76"
+                android:background="@drawable/custom_edit_textbox"
+                android:ems="10"
+                android:hint="Please enter seat number"
+                android:imeOptions="actionDone"
+                android:padding="5dp"
+                android:inputType="textPersonName"
+                android:textSize="25sp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/DynamicEnterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/round_corner_button"
+                android:padding="2dp"
+                android:text="ENTER"
+                android:onClick="enter"
+                android:textSize="24sp"
+                android:layout_weight="0.20" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emptyTextView"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/llStudentID"
+            android:visibility="gone"
+            android:textColor="@color/colorAccent"
+            android:text="No Id's To Display"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/DynamicBtnRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/llkeyCancel"
+            android:layout_below="@+id/emptyTextView"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:numColumns="2" />
+
+        <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+            android:id="@+id/fast_scroller"
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/llkeyCancel"
+            android:layout_below="@+id/emptyTextView"
+            android:numColumns="2"
+            android:layout_alignRight="@+id/DynamicBtnRecyclerView"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/llkeyCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/DynamicBtnBackButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:padding="20dp"
+                    android:text="Back"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/cancel_btn_effects"
+                    android:visibility="visible"
+                    android:textSize="24sp"
+                    android:width="150dp" />
+
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="150dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/myFAB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dn"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="30dp"
+                    app:backgroundTint="#ffffffff"
+                    app:fabSize="normal" />
+
+
+
+            </LinearLayout>
+
+            <android.inputmethodservice.KeyboardView
+                android:id="@+id/keyboardview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
